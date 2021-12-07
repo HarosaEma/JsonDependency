@@ -1,6 +1,7 @@
+package Controller;
 
 import Repo.StudentFileRepository;
-import Student;
+import Uni.Student;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;

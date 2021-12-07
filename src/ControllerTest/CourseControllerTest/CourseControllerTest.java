@@ -1,5 +1,7 @@
-import CourseRepo;
-import Course;
+package Controller;
+
+import Repo.CourseRepo;
+import Uni.Course;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,9 @@
+package Registration;
 
-
-import CourseController;
+import Controller.CourseController;
 import Controller.StudentController;
-import Course;
-import Student;
+import Uni.Course;
+import Uni.Student;
 
 import java.util.ArrayList;
 import java.util.List;

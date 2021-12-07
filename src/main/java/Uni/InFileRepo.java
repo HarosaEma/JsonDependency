@@ -1,3 +1,5 @@
+package Uni;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,13 +13,14 @@ abstract class IFileRepository<T> implements ICrudRepository<T> {
     /**
      * input data in repolist from file
      */
-    public void population(){
+    public void population() {
 
     }
+
     /**
      * constructor initializing the list of each repository
      */
-    public IFileRepository(){
+    public IFileRepository() {
         this.repoList = new ArrayList<>();
     }
 
@@ -25,7 +28,7 @@ abstract class IFileRepository<T> implements ICrudRepository<T> {
     /**
      * implementation of the function from the interface CRUDREPO
      */
-    public T create(T obj){
+    public T create(T obj) {
         this.repoList.add(obj);
         return obj;
     }
@@ -34,7 +37,7 @@ abstract class IFileRepository<T> implements ICrudRepository<T> {
     /**
      * implementation of function from interface CRUDREPO
      */
-    public List<T> getAll(){
+    public List<T> getAll() {
         return this.repoList;
     }
 
@@ -42,8 +45,7 @@ abstract class IFileRepository<T> implements ICrudRepository<T> {
     /**
      * implemetation of function from interfavce CRUDREPO
      */
-    public void delete(T obj){
+    public void delete(T obj) {
         this.repoList.remove(obj);
     }
-
 }

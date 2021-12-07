@@ -1,3 +1,6 @@
+package Uni;
+
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -6,9 +9,9 @@ import java.util.List;
  */
 public class Student extends Person implements Serializable {
 
-    private static int counter=0;
+    private static long counter=0;
     private long studentId;
-    private int totalCredits;
+    private long totalCredits;
     private List<Course> enrolledCourses;
 
     /**
@@ -17,7 +20,7 @@ public class Student extends Person implements Serializable {
      * @param totalCredits the number of credits accumulated along the years by the student
      * @param enrolledCourses the courses that one student takes currently
      */
-    public Student(String Firstname,String Lastname, int totalCredits, List<Course> enrolledCourses) {
+    public Student(String Firstname,String Lastname, long totalCredits, List<Course> enrolledCourses) {
         super(Firstname,Lastname);
         super.firstname=Firstname;
         super.lastname=Lastname;
@@ -35,11 +38,11 @@ public class Student extends Person implements Serializable {
         this.studentId = studentId;
     }
 
-    public int getTotalCredits() {
+    public long getTotalCredits() {
         return totalCredits;
     }
 
-    public void setTotalCredits(int totalCredits) {
+    public void setTotalCredits(long totalCredits) {
         this.totalCredits = totalCredits;
     }
 

@@ -1,4 +1,4 @@
-//package Uni;
+package Uni;
 
 /**
  *class defining a person

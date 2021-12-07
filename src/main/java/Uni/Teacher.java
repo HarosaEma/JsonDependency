@@ -1,3 +1,7 @@
+package Uni;
+
+
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -27,6 +31,14 @@ public class Teacher extends Person implements Serializable {
 
     public void setCourses(List<Course> courses) {
         this.courses = courses;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
     @Override
